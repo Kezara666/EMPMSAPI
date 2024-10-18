@@ -26,5 +26,5 @@ Before running this application, ensure you have the following installed:
 First, clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/your-repo/employee-management-app.git
+git clone https://github.com/Kezara666/EMPMSAPI
 cd employee-management-app
