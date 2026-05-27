@@ -1,30 +1,53 @@
-# Employee Management Application
+# Employee Management System — API
 
-This project is a C# application built on **.NET 6** and **Entity Framework Core 6.35** (EF Core 6) for performing CRUD (Create, Read, Update, Delete) operations on an Employee entity. The API exposes endpoints for managing employee data and supports database interaction via EF Core.
+ASP.NET Core Web API for employee CRUD operations, built with .NET 6 and Entity Framework Core.
+
+## Overview
+
+RESTful backend that exposes endpoints to create, read, update, and delete employee records. Uses EF Core for data access with SQL Server.
 
 ## Features
 
-- Create a new employee
-- Retrieve employee details
-- Update employee information
-- Delete an employee
-- Supports SQL Server or any compatible database with the required connection
+- Full employee CRUD via REST API
+- Entity Framework Core 6 with migrations
+- Swagger/OpenAPI documentation
+- Docker support
+- SQL Server database
 
-## Prerequisites
+## Tech Stack
 
-Before running this application, ensure you have the following installed:
-
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
-- SQL Server (or another compatible database)
-- A tool like [Postman](https://www.postman.com/) to interact with the API or Swagger
-![Screenshot 2024-10-18 182240](https://github.com/user-attachments/assets/83e67f54-6416-4943-aeb3-b60e707d1768)
+- **.NET 6** / ASP.NET Core Web API
+- **Entity Framework Core 6**
+- **SQL Server**
+- **Swagger** (Swashbuckle)
 
 ## Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
 
-First, clone the project repository to your local machine:
+- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- SQL Server
+
+### Run
 
 ```bash
-git clone https://github.com/Kezara666/EMPMSAPI
-cd employee-management-app
+git clone https://github.com/Kezara666/EMPMSAPI.git
+cd EMPMSAPI/EMPMS-API
+dotnet restore
+dotnet ef database update
+dotnet run
+```
+
+Open Swagger at `https://localhost:5001/swagger`.
+
+## Screenshots
+
+![API Swagger UI](https://github.com/user-attachments/assets/83e67f54-6416-4943-aeb3-b60e707d1768)
+
+## Related
+
+Frontend companion: [EmsFrontend](https://github.com/Kezara666/EmsFrontend)
+
+## Author
+
+Kezara Lakshan — [GitHub](https://github.com/Kezara666)
